@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
-    padding: 0 148px;
+    padding: 0;
   }
   button {
     padding: 0;

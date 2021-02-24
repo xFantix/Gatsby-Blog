@@ -10,7 +10,6 @@ const Navigation = () => {
                      FrontBlog
                 </Link>
             </Logo>
-           
           <NavigationList>
               <NavigationElement>
                   <Link to="/works">Works</Link>
