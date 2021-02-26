@@ -3,7 +3,7 @@ import {Link} from 'gatsby';
 export const BannerWrapper = styled.div`
     width:100%;
     display:flex;
-    padding: 140px 148px 0px  148px;
+    padding: 140px 148px 70px  148px;
     justify-content:space-around;
     font-family:"Heebo";
     @media(max-width:1040px){

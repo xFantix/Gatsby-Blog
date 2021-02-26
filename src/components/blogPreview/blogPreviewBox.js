@@ -1,6 +1,7 @@
 import React from 'react';
 import {graphql,useStaticQuery} from 'gatsby';
 import BlogPreviewElement from './blogPreviewElement';
+import {BoxWrapper} from './blogPreviewBoxStyle';
 const BlogPreviewBox = () => {
    
   const query = graphql`
@@ -10,7 +11,8 @@ const BlogPreviewBox = () => {
             node {
               originalId
               title
-              paragrap
+              paragraph
+              data
             }
           }
         }
@@ -20,19 +22,19 @@ const BlogPreviewBox = () => {
   
     const {edges} = articleBlogPrev.allDatoCmsArticle;
     
-      
 
     return ( 
-        <div>
+        <BoxWrapper>
             {
               edges.map(el=>(
                 <BlogPreviewElement
                   key={el.node.originalId}
                   title={el.node.title}
-                  paragpraph={el.node.paragpraph}/>
+                  data={el.node.data}
+                  paragraph={el.node.paragraph}/>
               ))
             }
-        </div>
+        </BoxWrapper>
      );
 }
  

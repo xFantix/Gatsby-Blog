@@ -1,10 +1,12 @@
 import React from 'react';
-
-const BlogPreviewElement = (props) => {
+import {Wrapper,Header,Data,Description} from './blogPreviewElementStyle';
+const BlogPreviewElement = ({title,data,paragraph}) => {
     return ( 
-        <div>
-              <h1>{props.title}</h1>
-        </div>
+        <Wrapper>
+              <Header>{title}</Header>
+              <Data>{data}</Data>
+              <Description>{paragraph}</Description>
+        </Wrapper>
      );
 }
  
