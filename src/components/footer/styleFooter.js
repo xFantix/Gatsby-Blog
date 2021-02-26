@@ -17,7 +17,7 @@ export const IconWrapper = styled.div`
 export const LinkIcon = styled(Link)`
     color:21243D ;
     text-decoration:none;
-    padding-right:30px;
+    padding:0 15px;
     font-size:35px;
     text-overflow: ellipsis;
 `
@@ -26,6 +26,6 @@ export const Text = styled.span`
     font-weight:400;
     font-size:14px;
     text-align:center;
+    padding:0 15px;
     padding-top:26px;
-    padding-right:30px;
 `

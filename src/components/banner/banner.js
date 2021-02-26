@@ -7,14 +7,13 @@ const Banner = () => {
       file(name: {eq: "avatar"}) {
         childImageSharp {
           fluid(maxWidth: 243, maxHeight: 243, quality: 100) {
-            src
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
     }
     `
     const photo = useStaticQuery(query);
-    console.log(photo);
     return ( 
         <BannerWrapper>
             <DescriptionWrapper>
