@@ -4,10 +4,10 @@ import {graphql,useStaticQuery} from 'gatsby';
 const Banner = () => {
     const query = graphql`
     {
-      file(name: {eq: "avatar"}) {
+      file(name: {eq: "avatar1"}) {
         childImageSharp {
           fluid(maxWidth: 243, maxHeight: 243, quality: 100) {
-            ...GatsbyImageSharpFluid_tracedSVG
+            src
           }
         }
       }
@@ -28,7 +28,7 @@ const Banner = () => {
             </DescriptionWrapper>
             <PhotoContainer>
                 <Photo image={photo.file.childImageSharp.fluid.src}>
-
+                  {console.log(photo.file.childImageSharp.fluid.src)}
                 </Photo>
             </PhotoContainer>
         </BannerWrapper>
